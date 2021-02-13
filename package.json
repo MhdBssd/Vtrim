@@ -1,12 +1,20 @@
 {
   "name": "vtrim",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vtrim main.js",
     "lint": "vue-cli-service lint"
   },
+  "description": "Easily trim your medias with a fully customizable timeline",
+  "author": {
+    "name": "Mehdi Boussaad"
+  },
+  "keywords": ["vue", "vuejs", "vue.js", "trim", "vtrim", "media", "editing", "crop"],
+  "license": "MIT",
+  "main": "./dist/vtrim.common.js",
+  "files": ["dist/*"],
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
@@ -32,7 +40,9 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-unused-vars": "off"
+    }
   },
   "browserslist": [
     "> 1%",
