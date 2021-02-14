@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/Vtrim/',
+  publicPath: '/Vtrim/dist/',
   css: {
     extract: false,
   },
