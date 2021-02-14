@@ -1,6 +1,6 @@
 {
   "name": "vtrim",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -13,10 +13,21 @@
   },
   "repository": "https://github.com/MhdBssd/Vtrim.git",
   "bugs": "https://github.com/MhdBssd/Vtrim.git/issues",
-  "keywords": ["vue", "vuejs", "vue.js", "trim", "vtrim", "media", "editing", "crop"],
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue.js",
+    "trim",
+    "vtrim",
+    "media",
+    "editing",
+    "crop"
+  ],
   "license": "MIT",
   "main": "./dist/vtrim.common.js",
-  "files": ["dist/*"],
+  "files": [
+    "dist/*"
+  ],
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
