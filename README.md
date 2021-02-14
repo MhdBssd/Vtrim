@@ -1,6 +1,6 @@
 # ✂️ Vtrim ✂️
 
-<img src="https://badgen.net/bundlephobia/min/vtrim" />
+<img src="https://badgen.net/bundlephobia/min/vtrim"/>
 
 Easily **trim your medias** with a fully customizable timeline.
 

@@ -35,6 +35,8 @@ html, body, #app {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
