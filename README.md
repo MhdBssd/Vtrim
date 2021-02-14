@@ -12,11 +12,11 @@ Easily **trim your medias** with a fully customizable timeline.
 <a href="https://mhdbssd.github.io/Vtrim/dist/index.html" target="_blank">Demo</a>
 
 ## 📖 Table of contents
-* [Installation](#installation)
-* [Getting started](#getting-started)
-* [Props](#props)
-* [Events](#events)
-* [Slots](#slots)
+* [Installation](#📥-installation)
+* [Getting started](#🚀-getting-started)
+* [Props](#⚙️-props)
+* [Events](#🚨-events)
+* [Slots](#🧱-slots)
 
 
 ## 📥 Installation
