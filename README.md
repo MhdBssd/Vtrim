@@ -5,7 +5,6 @@ Easily **trim your medias** with a fully customizable timeline.
 
 + Mobile touch events support 📱
 + Styled by default and **fully customizable**  🎨
-+ Only **3.51 KB Gzipped**  📡
 + **Audio** 🎵 and **video** 🎞️ compatible
 
 ## ✨ Demo
