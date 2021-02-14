@@ -1,14 +1,8 @@
-import Vtrim      from './components/Vtrim.vue';
+import Vue from 'vue';
+import App from './App.vue';
 
+Vue.config.productionTip = false;
 
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(Vtrim);
-}
-
-
-export default {
-  install(Vue) {
-    Vue.component('vtrim', Vtrim);
-  }
-};
-export { Vtrim };
+new Vue({
+  render: h => h(App),
+}).$mount('#app');
