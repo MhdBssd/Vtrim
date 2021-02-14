@@ -275,7 +275,9 @@ export default {
       this.$emit('seek', newMediaCurrentTimePrecision);
     },
     setDefaultTrim() {
-      const { start: trimmedStart, end: trimmedEnd } = this.defaultTrim;
+      const { start, end } = this.defaultTrim;
+      const trimmedStart = Math.max(0, start);
+      const trimmedEnd = Math.min(this.mediaDuration, end);
       const progressBarTotalWidth = this.$refs?.progress?.clientWidth ?? 0;
 
       this.startLeftPosition = (trimmedStart / this.mediaDuration) * 100;
@@ -321,7 +323,7 @@ export default {
   },
   watch: {
     mediaDuration() {
-      this.trimmedEnd = this.defaultTrim?.end || this.mediaDuration;
+      this.trimmedEnd = this.defaultTrim?.end ? Math.min(this.defaultTrim?.end, this.mediaDuration) : this.mediaDuration;
 
       if (this.defaultTrim) this.setDefaultTrim();
       else {
