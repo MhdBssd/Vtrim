@@ -4,7 +4,7 @@
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vtrim main.js",
+    "build": "vue-cli-service build --target lib --name vtrim src/main.js",
     "lint": "vue-cli-service lint"
   },
   "description": "Easily trim your medias with a fully customizable timeline",
@@ -42,9 +42,7 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {
-      "no-unused-vars": "off"
-    }
+    "rules": {}
   },
   "browserslist": [
     "> 1%",
