@@ -111,10 +111,10 @@ export default {
 
 |Name|Payload|Type|Description|
 |:--:|:--:|:-----:|:----------|
-|**`trim-strart`**|`trimStart`| `Number` | Fired everytime the start trim handle is moved. Receives the raw start trim time in seconds |
-|**`trim-end`**|`trimEnd`| `Number` | Fired everytime the end trim handle is moved. Receives the raw end trim time in seconds |
+|**`trim-strart`**|`trimStartTime`| `Number` | Fired everytime the start trim handle is moved. Receives the raw start trim time in seconds |
+|**`trim-end`**|`trimEndTime`| `Number` | Fired everytime the end trim handle is moved. Receives the raw end trim time in seconds |
 |**`seek`**|`seekTime`| `Number` | Fired everytime the playhead is moved. Receives the raw seek time in seconds |
-|**`play-overflow`**|`currentTime`|`Number`| Fired everytime the media is currently playing before trim start or after trim end. Receives the raw seek time in seconds |
+|**`play-overflow`**|`currentTime`|`Number`| Fired everytime the media is currently playing before trim start or after trim end. Receives the raw current time in seconds |
 
 ## 🧱 Slots
 
@@ -126,5 +126,5 @@ export default {
 |**`playhead`**|`{}`| The playhead |
 |**`start-time`**|`{ currentTime: Number, startTime: Number }`| The start trim time. Receives the current media time and the formatted trim start time |
 |**`end-time`**|`{ currentTime: Number, endTime: Number }`| The end trim time. Receives the current media time and the formatted trim end time |
-|**`timeline`**|`{ startLeftPosition: Number, endRightPosition: Number }`| The trimmed timeline. Receives the start left position and end right position in `%` relative to the progress bar. *E.g: A video trimmed from its beginning to half its duration would receive: `{ startLeftPosition: 0, endRightPosition: 50 }`* |
-|**`timeline-playing`**|`{ startLeftPosition: Number, currentRightPosition: Number }`| The playing timeline within the trimmed timeline. Receives the start left position and current end right position in `%` relative to the trimmed video duration. *E.g: A video trimmed from 0s to 10s currently playing at 5s would receive: `{ startLeftPosition: 0, endRightPosition: 50 }`* |
+|**`timeline`**|`{ startLeftPosition: Number, endRightPosition: Number }`| The trimmed timeline. Receives the start left position and end right position in `%` relative to the progress bar. *E.g: A media trimmed from its beginning to half its duration would receive: `{ startLeftPosition: 0, endRightPosition: 50 }`* |
+|**`timeline-playing`**|`{ startLeftPosition: Number, currentRightPosition: Number }`| The playing timeline within the trimmed timeline. Receives the start left position and current end right position in `%` relative to the trimmed media duration. *E.g: A media trimmed from 0s to 10s currently playing at 5s would receive: `{ startLeftPosition: 0, endRightPosition: 50 }`* |
