@@ -4,7 +4,7 @@
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name vtrim src/main.js",
+    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "description": "Easily trim your medias with a fully customizable timeline",
@@ -26,7 +26,6 @@
     "crop"
   ],
   "license": "MIT",
-  "main": "./dist/vtrim.common.js",
   "files": [
     "dist/*"
   ],
