@@ -46,7 +46,13 @@ figure {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  figure {
+    padding: 2rem;
+  }
 }
 
 figure, video {
