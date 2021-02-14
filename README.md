@@ -9,7 +9,7 @@ Easily **trim your medias** with a fully customizable timeline.
 + **Audio** 🎵 and **video** 🎞️ compatible
 
 ## ✨ Demo
-Fiddle
+[Demo](https://mhdbssd.github.io/Vtrim/dist/index.html)
 
 ## 📖 Table of contents
 * [Installation](#installation)
