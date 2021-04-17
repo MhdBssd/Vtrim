@@ -457,19 +457,11 @@ export default {
 .vtrim__playhead {
   z-index: 10;
   position: absolute;
+  bottom: -10px;
   display: flex;
-  transform: translate(50%, 150%);
-  transition: right .5s ease-out;
   user-select: none;
-}
-
-.vtrim__playhead::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 200%;
-  height: 200%;
-  transform: translate(-25%, -25%);
+  transform: translate(50%, calc(100% - 10px));
+  transition: right .5s ease-out;
 }
 
 .vtrim__playhead--seeking {
