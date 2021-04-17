@@ -210,7 +210,9 @@ export default {
       if (!this.mouseDown) return;
 
       const progressBarTotalWidth = this.$refs.progress.clientWidth;
-      const movementX = event.touches ? this.getMovementFromTouch(event) : event.movementX;
+      const movementX = event.touches
+        ? this.getMovementFromTouch(event)
+        : event.movementX;
 
       if (!movementX) return;
 
@@ -235,7 +237,9 @@ export default {
       if (!this.mouseDown) return;
 
       const progressBarTotalWidth = this.$refs.progress.clientWidth;
-      const movementX = event.touches ? this.getMovementFromTouch(event) : event.movementX;
+      const movementX = event.touches
+        ? this.getMovementFromTouch(event)
+        : event.movementX;
 
       if (!movementX) return;
 
@@ -260,7 +264,9 @@ export default {
       if (!this.mouseDown) return;
 
       const progressBarTotalWidth = this.$refs.progress.clientWidth;
-      const movementX = event.touches ? this.getMovementFromTouch(event) : event.movementX;
+      const movementX = event.touches
+        ? this.getMovementFromTouch(event)
+        : event.movementX;
 
       if (!movementX) return;
 
@@ -323,7 +329,9 @@ export default {
   },
   watch: {
     mediaDuration() {
-      this.trimmedEnd = this.defaultTrim?.end ? Math.min(this.defaultTrim?.end, this.mediaDuration) : this.mediaDuration;
+      this.trimmedEnd = this.defaultTrim?.end
+        ? Math.min(this.defaultTrim?.end, this.mediaDuration)
+        : this.mediaDuration;
 
       if (this.defaultTrim) this.setDefaultTrim();
       else {
