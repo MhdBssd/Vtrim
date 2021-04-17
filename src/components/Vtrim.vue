@@ -393,7 +393,7 @@ export default {
 }
 
 .vtrim__trim-control {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   display: flex;
   user-select: none;
